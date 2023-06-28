@@ -22,6 +22,7 @@
   },
   "scripts": {
     "postinstall": "husky install",
+    "format": "prettier --cache --write .",
     "lint": "eslint --cache .",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -55,8 +56,8 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "prettier --cache --write",
-      "git add"
+      "prettier --cache --write .",
+      "git add ."
     ]
   }
 }
