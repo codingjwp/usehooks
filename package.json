@@ -55,8 +55,8 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "prettier --cache --write .",
-      "git add ."
+      "prettier --cache --write",
+      "git add"
     ]
   }
 }
